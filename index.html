@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Staatliches&display=swap"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Rate Mentoring Form</title>
+  </head>
+  <body>
+    <header>
+      <h1>Avalie a sua mentoria</h1>
+      <h2>Chegou a hora de avaliar o seu mentos. Bora lá?</h2>
+      <img src="./assets/img/ask.svg" alt="A ballon with starts" />
+    </header>
+    <div class="form-header">
+      <h3>Personal Info</h3>
+    </div>
+    <form>
+      <fieldset>
+        <legend class="personal-info">Personal Info</legend>
+        <div class="name-wrapper">
+          <div class="input-wrapper">
+            <label for="name">Nome</label>
+            <input id="name" type="text" name="name" required />
+          </div>
+          <div class="input-wrapper">
+            <label for="lastname">Lastname</label>
+            <input id="lastname" type="text" name="lastname" required />
+          </div>
+        </div>
+        <div class="input-wrapper">
+          <label for="email">Email <span>(type a valid email)</span></label>
+          <input id="email" type="text" name="email" required />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Mentor information</legend>
+        <div class="input-wrapper">
+          <label for="who">Who was your mentor?</label>
+          <input id="who" type="text" name="who" required />
+        </div>
+        <div class="input-wrapper">
+          <label for="feedback">Feedback regarding your mentor</label>
+          <textarea name="feedback" rows="5" required></textarea>
+        </div>
+        <div class="checkbox-wrapper">
+          <input
+            type="checkbox"
+            id="doubts"
+            name="doubts"
+            value="doubts"
+            required
+          />
+          <label for="doubts">
+            All my doubts were clarified during the mentoring.</label
+          ><br />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Next mentoring</legend>
+        <div class="time-wrapper">
+          <div class="input-wrapper">
+            <label for="day">Day</label>
+            <input id="day" type="date" name="day" required />
+          </div>
+          <div class="input-wrapper">
+            <label for="beggin">Beggin</label>
+            <input id="beggin" type="time" name="beggin" required />
+          </div>
+          <div class="input-wrapper">
+            <label for="end">End</label>
+            <input id="end" type="time" name="end" required />
+          </div>
+        </div>
+      </fieldset>
+      <div class="save-button">
+        <input type="submit" value="Save" />
+      </div>
+    </form>
+    <div class="form-footer"></div>
+  </body>
+</html>
